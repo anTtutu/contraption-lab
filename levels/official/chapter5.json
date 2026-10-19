@@ -1,0 +1,636 @@
+[
+  {
+    "version": 2,
+    "id": "L5-01",
+    "source": "official",
+    "name": "定时起跳",
+    "chapter": 5,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "s1",
+        "type": "plank",
+        "x": 500,
+        "y": 360,
+        "angle": 15,
+        "isStatic": true
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 420,
+        "y": 300,
+        "variant": "wood"
+      },
+      {
+        "pid": "gate",
+        "type": "plank",
+        "x": 640,
+        "y": 450,
+        "angle": 90,
+        "isStatic": true,
+        "meta": {
+          "breakable": true
+        }
+      },
+      {
+        "pid": "bm1",
+        "type": "bomb",
+        "x": 660,
+        "y": 520,
+        "isStatic": true,
+        "meta": {
+          "delay": 2
+        }
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 680,
+        "y": 560
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "挡板 2 秒后被炸开，提前搭好下半程"
+      }
+    ],
+    "starRule": {
+      "maxParts": 1
+    },
+    "hints": {
+      "text": "竖着的挡板 2 秒后会被炸开——趁现在把球滚下来的路铺好！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 840,
+          "y": 500,
+          "angle": 16
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 840,
+          "y": 500,
+          "angle": 16
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L5-02",
+    "source": "official",
+    "name": "蜡烛点火",
+    "chapter": 5,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "s1",
+        "type": "plank",
+        "x": 450,
+        "y": 340,
+        "angle": 20,
+        "isStatic": true
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 390,
+        "y": 272,
+        "variant": "wood"
+      },
+      {
+        "pid": "bm1",
+        "type": "bomb",
+        "x": 540,
+        "y": 370,
+        "isStatic": true
+      },
+      {
+        "pid": "cd1",
+        "type": "candle",
+        "x": 560,
+        "y": 295,
+        "meta": {
+          "delay": 3
+        }
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 540,
+        "y": 260
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 980,
+        "y": 560
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "蜡烛点燃炸弹，礼花炸爆气球"
+      }
+    ],
+    "starRule": {
+      "maxParts": 1
+    },
+    "hints": {
+      "text": "蜡烛烧 3 秒点燃炸弹——炸弹的礼花会炸爆正上方的气球！看看它什么时候响。",
+      "ghost": [],
+      "solution": []
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L5-03",
+    "source": "official",
+    "name": "掐准时间",
+    "chapter": 5,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "s1",
+        "type": "plank",
+        "x": 420,
+        "y": 320,
+        "angle": 14,
+        "isStatic": true
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 340,
+        "y": 260,
+        "variant": "wood"
+      },
+      {
+        "pid": "gate1",
+        "type": "plank",
+        "x": 560,
+        "y": 400,
+        "angle": 90,
+        "isStatic": true,
+        "meta": {
+          "breakable": true
+        }
+      },
+      {
+        "pid": "bm1",
+        "type": "bomb",
+        "x": 580,
+        "y": 470,
+        "isStatic": true,
+        "meta": {
+          "delay": 2
+        }
+      },
+      {
+        "pid": "s2",
+        "type": "plank",
+        "x": 760,
+        "y": 480,
+        "angle": 14,
+        "isStatic": true
+      },
+      {
+        "pid": "gate2",
+        "type": "plank",
+        "x": 900,
+        "y": 560,
+        "angle": 90,
+        "isStatic": true,
+        "meta": {
+          "breakable": true
+        }
+      },
+      {
+        "pid": "bm2",
+        "type": "bomb",
+        "x": 920,
+        "y": 620,
+        "isStatic": true,
+        "meta": {
+          "delay": 4
+        }
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 620,
+        "y": 620
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "两道门按时开，一路通行"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "第一道门 2 秒开，第二道 4 秒开——球的路线和开门时间要对上！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 1020,
+          "y": 590,
+          "angle": 12
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 1020,
+          "y": 590,
+          "angle": 12
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L5-04",
+    "source": "official",
+    "name": "连环礼花",
+    "chapter": 5,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "s0",
+        "type": "plank",
+        "x": 420,
+        "y": 250,
+        "angle": 10,
+        "isStatic": true
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 350,
+        "y": 195,
+        "variant": "wood"
+      },
+      {
+        "pid": "b2",
+        "type": "ball",
+        "x": 440,
+        "y": 190,
+        "variant": "steel"
+      },
+      {
+        "pid": "gate",
+        "type": "plank",
+        "x": 545,
+        "y": 215,
+        "angle": 90,
+        "isStatic": true,
+        "meta": {
+          "breakable": true
+        }
+      },
+      {
+        "pid": "bm1",
+        "type": "bomb",
+        "x": 560,
+        "y": 290,
+        "isStatic": true,
+        "meta": {
+          "delay": 3
+        }
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 620,
+        "y": 600
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 3
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "木球冲进筐"
+      },
+      {
+        "type": "ball_in_basket",
+        "actor": "b2",
+        "target": "bk1",
+        "desc": "钢球也进同一个筐"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "闸门一开两颗球一起冲——把路引到同一个筐里！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 760,
+          "y": 420,
+          "angle": 18
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 760,
+          "y": 430,
+          "angle": 20
+        },
+        {
+          "pid": "s2",
+          "type": "plank",
+          "x": 980,
+          "y": 540,
+          "angle": 14
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L5-05",
+    "source": "official",
+    "name": "定时炮台",
+    "chapter": 5,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "s1",
+        "type": "plank",
+        "x": 450,
+        "y": 340,
+        "angle": 20,
+        "isStatic": true
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 390,
+        "y": 272,
+        "variant": "steel"
+      },
+      {
+        "pid": "bm1",
+        "type": "bomb",
+        "x": 540,
+        "y": 370,
+        "isStatic": true
+      },
+      {
+        "pid": "cd1",
+        "type": "candle",
+        "x": 560,
+        "y": 295,
+        "meta": {
+          "delay": 5
+        }
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 540,
+        "y": 240
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "5 秒长引信——耐心等待礼花开花"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "这一次引信特别长（5 秒）——数着秒数，看礼花在气球上开花！",
+      "ghost": [],
+      "solution": []
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L5-06",
+    "source": "official",
+    "name": "双计时器",
+    "chapter": 5,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "s1",
+        "type": "plank",
+        "x": 400,
+        "y": 300,
+        "angle": 14,
+        "isStatic": true
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 320,
+        "y": 240,
+        "variant": "wood"
+      },
+      {
+        "pid": "gate1",
+        "type": "plank",
+        "x": 540,
+        "y": 380,
+        "angle": 90,
+        "isStatic": true,
+        "meta": {
+          "breakable": true
+        }
+      },
+      {
+        "pid": "bm1",
+        "type": "bomb",
+        "x": 560,
+        "y": 450,
+        "isStatic": true,
+        "meta": {
+          "delay": 2
+        }
+      },
+      {
+        "pid": "s2",
+        "type": "plank",
+        "x": 720,
+        "y": 440,
+        "angle": 16,
+        "isStatic": true
+      },
+      {
+        "pid": "gate2",
+        "type": "plank",
+        "x": 860,
+        "y": 520,
+        "angle": 90,
+        "isStatic": true,
+        "meta": {
+          "breakable": true
+        }
+      },
+      {
+        "pid": "bm2",
+        "type": "bomb",
+        "x": 880,
+        "y": 590,
+        "isStatic": true,
+        "meta": {
+          "delay": 5
+        }
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 600,
+        "y": 600
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "双门接力，冲向终点"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "2 秒开第一道门，5 秒开第二道——中间那段坡的角度是关键！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 1000,
+          "y": 570,
+          "angle": 14
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 1000,
+          "y": 570,
+          "angle": 14
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 90,
+      "verified": true
+    }
+  }
+]

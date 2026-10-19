@@ -1,0 +1,19 @@
+{
+  "name": "奇妙机关工坊 Contraption Lab",
+  "short_name": "机关工坊",
+  "description": "面向小学生的 2D 物理连锁机关解谜 + 创作平台",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#EAD9B0",
+  "theme_color": "#4A90D9",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

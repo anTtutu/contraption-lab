@@ -1,0 +1,29 @@
+{
+  "name": "contraption-lab",
+  "version": "0.2.0",
+  "description": "奇妙机关工坊 Contraption Lab —— 面向小学生的 2D 物理连锁机关解谜 + 创作平台",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@sqlite.org/sqlite-wasm": "3.53.4-build2",
+    "matter-js": "^0.20.0",
+    "phaser": "^3.85.0"
+  },
+  "devDependencies": {
+    "@types/matter-js": "^0.20.2",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.0",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "Anttu"
+}

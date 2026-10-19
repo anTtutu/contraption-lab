@@ -1,0 +1,538 @@
+[
+  {
+    "version": 2,
+    "id": "L7-01",
+    "source": "official",
+    "name": "坡与垫的二重奏",
+    "chapter": 7,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sh1",
+        "type": "shelf",
+        "x": 200,
+        "y": 160,
+        "angle": 8
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 272,
+        "y": 110,
+        "variant": "wood"
+      },
+      {
+        "pid": "pad1",
+        "type": "bouncyPad",
+        "x": 560,
+        "y": 600
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 920,
+        "y": 460
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 3
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "斜面加速 + 弹力垫起飞，综合运用！"
+      }
+    ],
+    "starRule": {
+      "maxParts": 3
+    },
+    "hints": {
+      "text": "先用斜坡给球加速，再让它落到弹力垫上飞向篮筐——第一章和第二章的组合技！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 340,
+          "y": 220,
+          "angle": 20
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 340,
+          "y": 220,
+          "angle": 20
+        },
+        {
+          "pid": "s2",
+          "type": "plank",
+          "x": 560,
+          "y": 330,
+          "angle": 24
+        },
+        {
+          "pid": "s3",
+          "type": "plank",
+          "x": 860,
+          "y": 460,
+          "angle": 20
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 90,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L7-02",
+    "source": "official",
+    "name": "传送带来客串",
+    "chapter": 7,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "cv1",
+        "type": "conveyor",
+        "x": 500,
+        "y": 480,
+        "meta": {
+          "speed": 2,
+          "dir": 1
+        }
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 400,
+        "y": 240,
+        "variant": "wood"
+      },
+      {
+        "pid": "pad1",
+        "type": "bouncyPad",
+        "x": 980,
+        "y": 620
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 400,
+        "y": 420
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      },
+      {
+        "type": "bouncyPad",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "传送带运球 + 弹力垫起飞！"
+      }
+    ],
+    "starRule": {
+      "maxParts": 3
+    },
+    "hints": {
+      "text": "传送带把球送到尽头丢下去——弹力垫再送它一程！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "bouncyPad",
+          "x": 760,
+          "y": 640
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "bouncyPad",
+          "x": 760,
+          "y": 640
+        },
+        {
+          "pid": "s2",
+          "type": "plank",
+          "x": 940,
+          "y": 520,
+          "angle": 24
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 90,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L7-03",
+    "source": "official",
+    "name": "重锤与礼花",
+    "chapter": 7,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sw1",
+        "type": "seesaw",
+        "x": 600,
+        "y": 420
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 460,
+        "y": 390,
+        "variant": "wood"
+      },
+      {
+        "pid": "bm1",
+        "type": "bomb",
+        "x": 300,
+        "y": 300,
+        "isStatic": true
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 320,
+        "y": 180
+      }
+    ],
+    "inventory": [
+      {
+        "type": "ball",
+        "count": 1,
+        "variant": "bowling"
+      },
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "杠杆炮把木球射向炸弹——礼花再炸爆气球！"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "木球被炮出去撞到炸弹——炸弹爆炸的冲击波会炸爆正上方的气球！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "ball",
+          "x": 760,
+          "y": 30,
+          "variant": "bowling"
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "ball",
+          "x": 760,
+          "y": 20,
+          "variant": "bowling"
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L7-04",
+    "source": "official",
+    "name": "乘风打靶",
+    "chapter": 7,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "f1",
+        "type": "fan",
+        "x": 260,
+        "y": 340,
+        "meta": {
+          "dir": 0,
+          "power": 2
+        }
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 400,
+        "y": 200,
+        "variant": "pingpong"
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 420,
+        "y": 400
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      },
+      {
+        "type": "bouncyPad",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "风中接力，撞靶！"
+      }
+    ],
+    "starRule": {
+      "maxParts": 3
+    },
+    "hints": {
+      "text": "风把球送到半路——给它一块跳板冲向气球！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 560,
+          "y": 520,
+          "angle": 24
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 580,
+          "y": 540,
+          "angle": 24
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L7-05",
+    "source": "official",
+    "name": "三重奏",
+    "chapter": 7,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "cv1",
+        "type": "conveyor",
+        "x": 400,
+        "y": 480,
+        "meta": {
+          "speed": 2,
+          "dir": 1
+        }
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 300,
+        "y": 220,
+        "variant": "bouncy"
+      },
+      {
+        "pid": "bm1",
+        "type": "bomb",
+        "x": 860,
+        "y": 520,
+        "isStatic": true,
+        "meta": {
+          "delay": 4
+        }
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 480,
+        "y": 380
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 3
+      },
+      {
+        "type": "bouncyPad",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "弹力球蹦上传送带——4 秒后的礼花终结战斗！"
+      }
+    ],
+    "starRule": {
+      "maxParts": 3
+    },
+    "hints": {
+      "text": "弹力球会自己蹦上传送带，被送到右边——落在定时炸弹旁，轰！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 700,
+          "y": 480,
+          "angle": 18
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 700,
+          "y": 470,
+          "angle": 18
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 90,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L7-06",
+    "source": "official",
+    "name": "咕噜大庆典",
+    "chapter": 7,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "b1",
+        "type": "balloon",
+        "x": 300,
+        "y": 620
+      },
+      {
+        "pid": "bt1",
+        "type": "balloonTarget",
+        "x": 300,
+        "y": 280
+      },
+      {
+        "pid": "b2",
+        "type": "ball",
+        "x": 700,
+        "y": 100,
+        "variant": "bouncy"
+      },
+      {
+        "pid": "pad1",
+        "type": "bouncyPad",
+        "x": 700,
+        "y": 640
+      },
+      {
+        "pid": "bm1",
+        "type": "bomb",
+        "x": 1040,
+        "y": 560,
+        "isStatic": true,
+        "meta": {
+          "delay": 5
+        }
+      },
+      {
+        "pid": "bt2",
+        "type": "balloonTarget",
+        "x": 1040,
+        "y": 420
+      }
+    ],
+    "inventory": [],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt1",
+        "desc": "礼花一：气球升空"
+      },
+      {
+        "type": "balloon_popped",
+        "target": "bt2",
+        "desc": "礼花二：定时炸弹"
+      }
+    ],
+    "starRule": {
+      "maxParts": 0
+    },
+    "hints": {
+      "text": "这是咕咕博士送给你的庆典！坐下来，欣赏机关一起运转吧～",
+      "ghost": [],
+      "solution": []
+    },
+    "meta": {
+      "timeout": 90,
+      "verified": true
+    }
+  }
+]

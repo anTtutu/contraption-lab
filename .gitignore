@@ -1,0 +1,19 @@
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+
+# 日志与临时文件
+*.log
+.DS_Store
+*.local
+
+# 编辑器
+.vscode/
+.idea/
+
+# 本地备份文件（导出的 .db/.clab 不入库）
+*.db
+*.clab
+
+docs/设计文档-v0.1.md

@@ -1,0 +1,553 @@
+[
+  {
+    "version": 2,
+    "id": "L4-01",
+    "source": "official",
+    "name": "跷跷板炮",
+    "chapter": 4,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sw1",
+        "type": "seesaw",
+        "x": 600,
+        "y": 420
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 440,
+        "y": 390,
+        "variant": "wood"
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 440,
+        "y": 310
+      }
+    ],
+    "inventory": [
+      {
+        "type": "ball",
+        "count": 1,
+        "variant": "steel"
+      }
+    ],
+    "forbiddenZones": [
+      {
+        "x": 640,
+        "y": 440,
+        "w": 360,
+        "h": 240,
+        "tip": "跷跷板右侧下方不许放东西！"
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "用钢球砸跷跷板右端，把木球炮出去撞爆气球"
+      }
+    ],
+    "starRule": {
+      "maxParts": 1
+    },
+    "hints": {
+      "text": "把钢球举高高砸在跷跷板右端——左端的木球就会像炮弹一样飞出去！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "ball",
+          "x": 760,
+          "y": 120,
+          "variant": "steel"
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "ball",
+          "x": 760,
+          "y": 20,
+          "variant": "steel"
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L4-02",
+    "source": "official",
+    "name": "翘板喂球",
+    "chapter": 4,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sw1",
+        "type": "seesaw",
+        "x": 600,
+        "y": 430
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 460,
+        "y": 400,
+        "variant": "wood"
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 400,
+        "y": 320
+      }
+    ],
+    "inventory": [
+      {
+        "type": "ball",
+        "count": 1,
+        "variant": "bowling"
+      },
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "forbiddenZones": [
+      {
+        "x": 200,
+        "y": 440,
+        "w": 320,
+        "h": 240,
+        "tip": "跷跷板左侧下方不许放东西！"
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "保龄球重锤砸板，木球飞出去撞爆气球"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "保龄球是大重锤——从高处砸跷跷板右端，威力超大！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "ball",
+          "x": 760,
+          "y": 120,
+          "variant": "bowling"
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "ball",
+          "x": 760,
+          "y": 20,
+          "variant": "bowling"
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L4-03",
+    "source": "official",
+    "name": "四两拨千斤",
+    "chapter": 4,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sw1",
+        "type": "seesaw",
+        "x": 620,
+        "y": 420
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 480,
+        "y": 390,
+        "variant": "wood"
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 440,
+        "y": 260
+      }
+    ],
+    "inventory": [
+      {
+        "type": "ball",
+        "count": 1,
+        "variant": "bowling"
+      },
+      {
+        "type": "plank",
+        "count": 2
+      }
+    ],
+    "forbiddenZones": [
+      {
+        "x": 740,
+        "y": 440,
+        "w": 300,
+        "h": 240,
+        "tip": "跷跷板右侧下方不许放东西！"
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "更高的气球，砸得越狠飞得越高！"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "气球挂得更高了——重锤要举得更高、砸得更准！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "ball",
+          "x": 780,
+          "y": 140,
+          "variant": "bowling"
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "ball",
+          "x": 780,
+          "y": 20,
+          "variant": "bowling"
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L4-04",
+    "source": "official",
+    "name": "活动吊桥",
+    "chapter": 4,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sw1",
+        "type": "seesaw",
+        "x": 700,
+        "y": 400
+      },
+      {
+        "pid": "w1",
+        "type": "ball",
+        "x": 820,
+        "y": 320,
+        "variant": "steel"
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 880,
+        "y": 100,
+        "variant": "wood"
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 1160,
+        "y": 580
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "木球滚过会下沉的跷跷板掉进筐里"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "钢球先落下去把板的一头压沉——木球再滚下来时就顺着坡滑进筐啦！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 980,
+          "y": 480,
+          "angle": 16
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 980,
+          "y": 480,
+          "angle": 16
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L4-05",
+    "source": "official",
+    "name": "双板接力",
+    "chapter": 4,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sw1",
+        "type": "seesaw",
+        "x": 700,
+        "y": 400
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 560,
+        "y": 370,
+        "variant": "wood"
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 480,
+        "y": 360
+      }
+    ],
+    "inventory": [
+      {
+        "type": "ball",
+        "count": 1,
+        "variant": "bowling"
+      },
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "forbiddenZones": [
+      {
+        "x": 480,
+        "y": 420,
+        "w": 300,
+        "h": 260,
+        "tip": "两板之间是咕噜通道，不许放东西！"
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "一口气把木球炮到最远的气球上！"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "目标在超级远处——重锤从最高处落下，角度调好！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "ball",
+          "x": 860,
+          "y": 120,
+          "variant": "bowling"
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "ball",
+          "x": 860,
+          "y": 20,
+          "variant": "bowling"
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 90,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L4-06",
+    "source": "official",
+    "name": "杠杆交响乐",
+    "chapter": 4,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sw1",
+        "type": "seesaw",
+        "x": 400,
+        "y": 420
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 260,
+        "y": 390,
+        "variant": "wood"
+      },
+      {
+        "pid": "sw2",
+        "type": "seesaw",
+        "x": 880,
+        "y": 420
+      },
+      {
+        "pid": "b2",
+        "type": "ball",
+        "x": 1020,
+        "y": 390,
+        "variant": "steel"
+      },
+      {
+        "pid": "bt1",
+        "type": "balloonTarget",
+        "x": 200,
+        "y": 300
+      },
+      {
+        "pid": "bt2",
+        "type": "balloonTarget",
+        "x": 760,
+        "y": 300
+      }
+    ],
+    "inventory": [
+      {
+        "type": "ball",
+        "count": 2,
+        "variant": "bowling"
+      }
+    ],
+    "forbiddenZones": [
+      {
+        "x": 480,
+        "y": 440,
+        "w": 320,
+        "h": 240,
+        "tip": "两板之间不许放东西！"
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt1",
+        "desc": "左炮：木球撞爆左气球"
+      },
+      {
+        "type": "balloon_popped",
+        "target": "bt2",
+        "desc": "右炮：钢球撞爆右气球"
+      }
+    ],
+    "starRule": {
+      "maxParts": 3
+    },
+    "hints": {
+      "text": "两门杠杆炮左右开弓——两颗重锤分别砸两块板的外端！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "ball",
+          "x": 560,
+          "y": 130,
+          "variant": "bowling"
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "ball",
+          "x": 560,
+          "y": 30,
+          "variant": "bowling"
+        },
+        {
+          "pid": "s2",
+          "type": "ball",
+          "x": 740,
+          "y": 30,
+          "variant": "bowling"
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 90,
+      "verified": true
+    }
+  }
+]

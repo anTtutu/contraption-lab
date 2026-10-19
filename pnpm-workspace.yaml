@@ -1,0 +1,5 @@
+# pnpm 工作区配置（单项目仓库：此文件仅承载 pnpm 设置）
+# pnpm 11 起依赖构建脚本白名单使用 allowBuilds 键（模板由 pnpm 自动写入，此处填定值）
+allowBuilds:
+  # esbuild 的 postinstall 负责校验平台二进制，vite/vitest 构建必需 → 放行
+  esbuild: true

@@ -1,0 +1,423 @@
+[
+  {
+    "version": 2,
+    "id": "L6-01",
+    "source": "official",
+    "name": "乘风而行",
+    "chapter": 6,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "f1",
+        "type": "fan",
+        "x": 300,
+        "y": 300,
+        "meta": {
+          "dir": 0,
+          "power": 3
+        }
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 420,
+        "y": 150,
+        "variant": "pingpong"
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 500,
+        "y": 600
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "乒乓球会被风吹走——在它落下的地方接住"
+      }
+    ],
+    "starRule": {
+      "maxParts": 1
+    },
+    "hints": {
+      "text": "风把球往右吹，吹出风口后球会往下掉——算好落点，搭个坡接住送进筐！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 760,
+          "y": 560,
+          "angle": 10
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 740,
+          "y": 550,
+          "angle": 12
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L6-02",
+    "source": "official",
+    "name": "气球升空",
+    "chapter": 6,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "b1",
+        "type": "balloon",
+        "x": 640,
+        "y": 600
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 640,
+        "y": 300
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "氦气球会一直往上升——看它撞上同伴！"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "氦气球比空气轻，会一直往上飘——这次什么都不用做，观察就好！",
+      "ghost": [],
+      "solution": []
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L6-03",
+    "source": "official",
+    "name": "逆风漂流",
+    "chapter": 6,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "f1",
+        "type": "fan",
+        "x": 980,
+        "y": 300,
+        "meta": {
+          "dir": 180,
+          "power": 3
+        }
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 860,
+        "y": 150,
+        "variant": "pingpong"
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 780,
+        "y": 600
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "风从右往左吹——这次往左边接"
+      }
+    ],
+    "starRule": {
+      "maxParts": 1
+    },
+    "hints": {
+      "text": "风扇调头了！球会往左漂——落点在左边某处。",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 540,
+          "y": 560,
+          "angle": -12
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 520,
+          "y": 550,
+          "angle": -12
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L6-04",
+    "source": "official",
+    "name": "风中打靶",
+    "chapter": 6,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "f1",
+        "type": "fan",
+        "x": 260,
+        "y": 340,
+        "meta": {
+          "dir": 0,
+          "power": 2
+        }
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 400,
+        "y": 200,
+        "variant": "pingpong"
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 420,
+        "y": 420
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "让风把乒乓球送到气球上"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "风只能送到半路——用弹力垫或斜板给球接力，撞上气球！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 560,
+          "y": 520,
+          "angle": 20
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 580,
+          "y": 540,
+          "angle": 24
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L6-05",
+    "source": "official",
+    "name": "气球快递",
+    "chapter": 6,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "b1",
+        "type": "balloon",
+        "x": 300,
+        "y": 600
+      },
+      {
+        "pid": "bt1",
+        "type": "balloonTarget",
+        "x": 300,
+        "y": 260
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      },
+      {
+        "type": "fan",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt1",
+        "desc": "气球升上天空，撞爆它的同伴"
+      }
+    ],
+    "starRule": {
+      "maxParts": 3
+    },
+    "hints": {
+      "text": "气球从左边升起——正上方挂着一个气球靶！",
+      "ghost": [],
+      "solution": []
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L6-06",
+    "source": "official",
+    "name": "风之谷",
+    "chapter": 6,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "f1",
+        "type": "fan",
+        "x": 300,
+        "y": 300,
+        "meta": {
+          "dir": 0,
+          "power": 3
+        }
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 420,
+        "y": 150,
+        "variant": "pingpong"
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 500,
+        "y": 600
+      },
+      {
+        "pid": "bk2",
+        "type": "basket",
+        "x": 700,
+        "y": 620
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      },
+      {
+        "type": "bouncyPad",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "乒乓球会漂到中间落下——选对筐放对位置！"
+      }
+    ],
+    "starRule": {
+      "maxParts": 3
+    },
+    "hints": {
+      "text": "球只漂到中间就掉了——把对的筐放到落点，别被另一个迷惑！",
+      "ghost": [],
+      "solution": []
+    },
+    "meta": {
+      "timeout": 90,
+      "verified": true
+    }
+  }
+]

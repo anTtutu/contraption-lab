@@ -1,0 +1,553 @@
+[
+  {
+    "version": 2,
+    "id": "L2-01",
+    "source": "official",
+    "name": "蹦床初体验",
+    "chapter": 2,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sh1",
+        "type": "shelf",
+        "x": 260,
+        "y": 180
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 210,
+        "y": 140,
+        "variant": "wood"
+      },
+      {
+        "pid": "pad1",
+        "type": "bouncyPad",
+        "x": 520,
+        "y": 600
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 500,
+        "y": 340
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "让木球借弹力垫弹进篮筐"
+      }
+    ],
+    "starRule": {
+      "maxParts": 1
+    },
+    "hints": {
+      "text": "小球从高台掉到弹力垫上会高高弹起——在它弹到最高的地方接住它！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 300,
+          "y": 170,
+          "angle": 8
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 300,
+          "y": 170,
+          "angle": 8
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L2-02",
+    "source": "official",
+    "name": "弹跳过墙",
+    "chapter": 2,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sh1",
+        "type": "shelf",
+        "x": 220,
+        "y": 200
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 170,
+        "y": 160,
+        "variant": "wood"
+      },
+      {
+        "pid": "wall1",
+        "type": "pillar",
+        "x": 620,
+        "y": 380
+      },
+      {
+        "pid": "pad1",
+        "type": "bouncyPad",
+        "x": 700,
+        "y": 620
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 620,
+        "y": 560
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      }
+    ],
+    "forbiddenZones": [
+      {
+        "x": 760,
+        "y": 420,
+        "w": 300,
+        "h": 240,
+        "tip": "墙后面是禁放区，只能从天上过去！"
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "弹过高墙，把球送进墙后的篮筐"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "弹力垫弹得高不高，看球落下来有多快——把弹力垫放在落点正下方！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 280,
+          "y": 190,
+          "angle": 10
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 280,
+          "y": 190,
+          "angle": 10
+        },
+        {
+          "pid": "s2",
+          "type": "plank",
+          "x": 380,
+          "y": 230,
+          "angle": 10
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L2-03",
+    "source": "official",
+    "name": "双重弹跳",
+    "chapter": 2,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "sh1",
+        "type": "shelf",
+        "x": 200,
+        "y": 160
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 150,
+        "y": 120,
+        "variant": "steel"
+      },
+      {
+        "pid": "pad1",
+        "type": "bouncyPad",
+        "x": 400,
+        "y": 620
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 500,
+        "y": 560
+      }
+    ],
+    "inventory": [
+      {
+        "type": "bouncyPad",
+        "count": 1
+      },
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "用两次弹跳把钢球送进篮筐"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "一次弹跳不够远？再放一块弹力垫，让它接力弹过去！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "bouncyPad",
+          "x": 700,
+          "y": 600
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "bouncyPad",
+          "x": 700,
+          "y": 600
+        },
+        {
+          "pid": "s2",
+          "type": "plank",
+          "x": 260,
+          "y": 150,
+          "angle": 6
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L2-04",
+    "source": "official",
+    "name": "超级蹦床",
+    "chapter": 2,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "tr1",
+        "type": "trampoline",
+        "x": 500,
+        "y": 640
+      },
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 500,
+        "y": 120,
+        "variant": "wood"
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 540,
+        "y": 300
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "蹦床超级弹！让木球在顶点落入篮筐"
+      }
+    ],
+    "starRule": {
+      "maxParts": 1
+    },
+    "hints": {
+      "text": "蹦床比弹力垫还弹——球会弹得几乎回到原来的高度！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 700,
+          "y": 500,
+          "angle": 20
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 700,
+          "y": 500,
+          "angle": 20
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L2-05",
+    "source": "official",
+    "name": "弹弹球打靶",
+    "chapter": 2,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 300,
+        "y": 100,
+        "variant": "bouncy"
+      },
+      {
+        "pid": "bt",
+        "type": "balloonTarget",
+        "x": 960,
+        "y": 420
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 2
+      }
+    ],
+    "forbiddenZones": [
+      {
+        "x": 700,
+        "y": 460,
+        "w": 260,
+        "h": 240,
+        "tip": "下面是咕噜的午睡区，从上面飞过去！"
+      }
+    ],
+    "goals": [
+      {
+        "type": "balloon_popped",
+        "target": "bt",
+        "desc": "让弹力球撞爆气球靶"
+      }
+    ],
+    "starRule": {
+      "maxParts": 2
+    },
+    "hints": {
+      "text": "弹力球落在大斜坡上会高高弹起——让它一路弹到气球上！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 360,
+          "y": 400,
+          "angle": 22
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 360,
+          "y": 400,
+          "angle": 22
+        },
+        {
+          "pid": "s2",
+          "type": "plank",
+          "x": 660,
+          "y": 460,
+          "angle": 22
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 60,
+      "verified": true
+    }
+  },
+  {
+    "version": 2,
+    "id": "L2-06",
+    "source": "official",
+    "name": "弹跳大乱斗",
+    "chapter": 2,
+    "author": "咕咕博士",
+    "scene": {
+      "width": 1280,
+      "height": 720,
+      "bg": "workshop"
+    },
+    "fixed": [
+      {
+        "pid": "b1",
+        "type": "ball",
+        "x": 180,
+        "y": 80,
+        "variant": "bouncy"
+      },
+      {
+        "pid": "b2",
+        "type": "ball",
+        "x": 640,
+        "y": 60,
+        "variant": "wood"
+      },
+      {
+        "pid": "pad1",
+        "type": "bouncyPad",
+        "x": 640,
+        "y": 620
+      },
+      {
+        "pid": "bk1",
+        "type": "basket",
+        "x": 600,
+        "y": 560
+      },
+      {
+        "pid": "bk2",
+        "type": "basket",
+        "x": 660,
+        "y": 540
+      }
+    ],
+    "inventory": [
+      {
+        "type": "plank",
+        "count": 3
+      },
+      {
+        "type": "bouncyPad",
+        "count": 1
+      }
+    ],
+    "goals": [
+      {
+        "type": "ball_in_basket",
+        "actor": "b1",
+        "target": "bk1",
+        "desc": "弹力球进左筐"
+      },
+      {
+        "type": "ball_in_basket",
+        "actor": "b2",
+        "target": "bk2",
+        "desc": "木球进右筐"
+      }
+    ],
+    "starRule": {
+      "maxParts": 3
+    },
+    "hints": {
+      "text": "两颗球两种脾气：弹力球爱蹦、木球爱滚——分头安排路线！",
+      "ghost": [
+        {
+          "pid": "g1",
+          "type": "plank",
+          "x": 260,
+          "y": 160,
+          "angle": 16
+        }
+      ],
+      "solution": [
+        {
+          "pid": "s1",
+          "type": "plank",
+          "x": 260,
+          "y": 160,
+          "angle": 16
+        },
+        {
+          "pid": "s2",
+          "type": "plank",
+          "x": 470,
+          "y": 250,
+          "angle": 16
+        },
+        {
+          "pid": "s3",
+          "type": "plank",
+          "x": 830,
+          "y": 470,
+          "angle": 14
+        }
+      ]
+    },
+    "meta": {
+      "timeout": 90,
+      "verified": true
+    }
+  }
+]

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 移动端 viewport：触屏适配基础（平板横屏为目标设备之一） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>奇妙机关工坊 Contraption Lab</title>
+    <!-- 站点图标：自绘 SVG 齿轮（零外部素材，同时消除 favicon 404） -->
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <!-- 步骤 9 / D15：PWA 离线缓存 + 可安装 -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#4A90D9" />
+    <style>
+      /* 页面底色与游戏背景调色板一致（背景木墙 #EAD9B0），加载瞬间不闪白 */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #ead9b0;
+        overflow: hidden;
+      }
+      /* 游戏画布容器：Phaser 以此为父节点居中缩放 */
+      #game {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <style>
+      /* 步骤 10 / D16-B：竖屏窄设备横屏引导遮罩（游戏为横版 16:9） */
+      #rotate-hint {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        background: #ead9b0;
+        color: #3a3226;
+        font-family: 'PingFang SC', 'HarmonyOS Sans SC', 'Microsoft YaHei', sans-serif;
+        text-align: center;
+        padding-top: 30vh;
+        font-size: 22px;
+        line-height: 2;
+      }
+      #rotate-hint .icon {
+        font-size: 64px;
+        display: block;
+        margin-bottom: 12px;
+        animation: rotate-anim 1.6s ease-in-out infinite;
+      }
+      @keyframes rotate-anim {
+        0%, 40% { transform: rotate(0deg); }
+        60%, 100% { transform: rotate(90deg); }
+      }
+      @media (orientation: portrait) and (max-width: 920px) {
+        #rotate-hint { display: block; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="rotate-hint">
+      <span class="icon">📱</span>
+      请把手机横过来玩哦！<br />
+      <small>（转动设备即可继续）</small>
+    </div>
+    <div id="game"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+      // PWA Service Worker 注册（仅 https/localhost；失败静默不影响游戏）
+      if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
